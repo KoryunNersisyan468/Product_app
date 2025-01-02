@@ -45,7 +45,6 @@ const Card: React.FC<CardProps> = ({ product }) => {
   };
 
   const handleCardClick = (e: React.MouseEvent) => {
- 
     if (e.target instanceof HTMLButtonElement) {
       e.preventDefault();
     }
@@ -61,7 +60,7 @@ const Card: React.FC<CardProps> = ({ product }) => {
       <Link
         to={`/products/${product.id}`}
         onClick={handleCardClick}
-        className="w-full h-full mt-0 box-border" 
+        className="w-full h-full mt-0 box-border"
       >
         <div className="h-[490px] w-[330px] box-border">
           <div className="container bg-gray-200 h-[490px] flex items-center justify-between flex-col border-2 border-gray-400 w-[330px] box-border p-5 mt-12">

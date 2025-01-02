@@ -84,7 +84,6 @@ const CreateEditForm: FC<CreateEditFormProps> = ({
               />
             </div>
 
-          
             <div>
               <label
                 htmlFor="image"

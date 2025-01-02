@@ -6,6 +6,7 @@ import {
 } from "../features/product/productSlice";
 import { ProductFilterSearch } from "../components/ProductFilterSearch";
 import Card from "../components/Card";
+import { FadeLoader } from "react-spinners";
 
 interface IProduct {
   id: number;
@@ -55,7 +56,7 @@ const Products = () => {
   if (loading)
     return (
       <div className="w-full flex justify-center items-center h-[93vh]">
-        <p>Loading...</p>
+        <FadeLoader />
       </div>
     );
 
