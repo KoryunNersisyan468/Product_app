@@ -26,7 +26,7 @@ export default function Header() {
   ];
 
   const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);   
+    setIsMenuOpen((prev) => !prev);
   };
 
   return (
@@ -40,7 +40,7 @@ export default function Header() {
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src="../public/logo.png" className="h-8" alt="Logo" />
+          <img src={`${import.meta.env.BASE_URL}/logo.png`} className="h-8" alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Home
           </span>

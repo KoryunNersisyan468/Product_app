@@ -73,12 +73,14 @@ const Products = () => {
           <p className="flex text-xl justify-center items-center">
             <span>No products found</span>
           </p>
-        ) : (filteredProducts.slice(0, visibleProductsCount).map((product) => (
-          <Card key={product.id} product={product} />
-        )))}
+        ) : (
+          filteredProducts
+            .slice(0, visibleProductsCount)
+            .map((product) => <Card key={product.id} product={product} />)
+        )}
       </div>
       {visibleProductsCount < filteredProducts.length && (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-16">
           <button
             onClick={handleShowMore}
             className="px-4 py-2 bg-blue-500 text-white rounded-lg"

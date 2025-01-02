@@ -7,10 +7,10 @@ const Home = () => {
       <LazyImage
         alt="Home Bg"
         height=""
-        src="../public/store-home-bg.jpg"
+        src={`${import.meta.env.BASE_URL}/store-home-bg.jpg`}
         width="100%"
         className="home-bg-img"
-        placeholderSrc="../public/store-home-bg-small.jpg"
+        placeholderSrc={`${import.meta.env.BASE_URL}/store-home-bg-small.jpg`}
       />
       <HomeStructure />
     </div>
